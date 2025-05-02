@@ -1,22 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Righteous } from 'next/font/google';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const righteous = Righteous({
-  weight: '400',
-  subsets: ['latin'],
-});
 
 export const metadata: Metadata = {
   title: "Kenny's Interface",
@@ -34,7 +17,7 @@ export default function RootLayout({
         <meta name="react-app" content="true" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0a192f]`}
+        className={`antialiased bg-[#0a192f]`}
         data-no-edit="true"
         suppressContentEditableWarning={true}
         suppressHydrationWarning={true}
