@@ -1,13 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: [],
-  },
   experimental: {
-    // Disable server components for now to avoid context issues
-    serverComponents: false,
-  },
-}
+    // Remove or update the serverComponents option as it's not recognized
+  }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
