@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.blink::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #64ffda;
+  margin-left: 2px;
+}
+
+
+/* Add this to your existing CSS */
+.cursor-hidden {
+  cursor: none;
+}
+
+/* Optional: You can apply this class to your body or specific elements */
+body {
+  cursor: none; /* Hide default cursor */
+}
+
+/* Make sure links and interactive elements still show appropriate cursors */
+a, button, input, textarea, select, [role="button"] {
+  cursor: none;
+}
+
