@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Github, Linkedin, Twitter, Mail, Home, User, Briefcase, FolderGit2, Youtube, Bold } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useActiveSection } from '../_hooks/useActiveSection';
-import { righteous } from '../fonts';
+
 
 export default function Herosection() {
   const activeSection = useActiveSection();
@@ -25,7 +25,7 @@ export default function Herosection() {
     <div className="fixed left-0 top-0 h-screen w-[300px] bg-[#0a192f] px-8 py-12 hidden lg:block" data-no-edit="true">
       <div className="flex flex-col h-full justify-between">
         <div>
-          <div className={`text-[#64ffda] text-2xl flex items-center gap-3 ${righteous.className}`}>
+          <div className={`text-[#64ffda] text-2xl flex items-center gap-3 `}>
             <span className="text-2xl">🚀</span>
             <span>Kenny's Interface</span>
           </div>

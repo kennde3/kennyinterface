@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { animate, stagger } from "motion";
 import { splitText } from "motion-plus";
 import { useEffect, useRef } from "react";
-import { poppins } from '../fonts';
+
 import Link from "next/link";
 import { useState } from "react";
 import Image from 'next/image';
@@ -53,7 +53,7 @@ export default function MainContent() {
   };
 
   return (
-    <div className={`md:ml-[300px] min-h-screen bg-[#0a192f] p-4 sm:p-6 md:p-8 transition-all duration-300 ease-in-out ${poppins.className}`}>
+    <div className={`md:ml-[300px] min-h-screen bg-[#0a192f] p-4 sm:p-6 md:p-8 transition-all duration-300 ease-in-out`}>
       <div className="max-w-4xl mx-auto">
         <section id="home" className="min-h-screen flex items-center">
           <motion.div

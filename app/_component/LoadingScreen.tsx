@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { poppins } from '../fonts';
+
 
 export default function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   const [progress, setProgress] = useState(0);
@@ -28,7 +28,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
   }, [progress, onComplete]);
   
   return (
-    <div className={`fixed inset-0 bg-[#0a192f] flex flex-col items-center justify-center z-50 ${poppins.className}`}>
+    <div className={`fixed inset-0 bg-[#0a192f] flex flex-col items-center justify-center z-50`}>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
