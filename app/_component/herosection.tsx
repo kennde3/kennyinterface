@@ -55,7 +55,7 @@ export default function Herosection() {
             </nav>
             <div>
               <div className="flex space-x-6 items-center justify-center text-[#8892b0]">
-                <Link href="email:niyonshutikenny@yahoo.com" target="_blank" className="hover:text-[#64ffda] transition-colors">
+                <Link href="emailto:niyonshutikenny@yahoo.com" target="_blank" className="hover:text-[#64ffda] transition-colors">
                   <Mail size={20} />
                 </Link>
                 <Link href="https://github.com/kennde3" target="_blank" className="hover:text-[#64ffda] transition-colors">
