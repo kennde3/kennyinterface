@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useState } from "react";
 import Image from 'next/image';
-import { X, ChevronsLeftRight, Minus, Code, Server, Database, Globe, FileCode, Terminal, GitBranch, Settings, Cpu, Network, Layers, Workflow, Laptop, PenTool, Zap, Briefcase, Smartphone } from 'lucide-react';
+import { X, ChevronsLeftRight, Minus, Code, Server, Database, Globe, FileCode, Terminal, GitBranch, Settings, Cpu, Network, Layers, Workflow, Laptop, PenTool, Zap, Briefcase, Smartphone, Bold, Github, Linkedin, Mail, Youtube, Instagram } from 'lucide-react';
 
 export default function MainContent() {
   const badgeRef = useRef<HTMLDivElement>(null);
@@ -417,6 +417,25 @@ export default function MainContent() {
             <p className="mb-6">
               
             </p>
+            <div>
+              <div className="flex space-x-6 items-center justify-center text-[#8892b0]">
+                <Link href="email:niyonshutikenny@yahoo.com" className="hover:text-[#64ffda] transition-colors">
+                  <Mail size={20} />
+                </Link>
+                <Link href="https://github.com/kennde3" className="hover:text-[#64ffda] transition-colors">
+                  <Github size={20} />
+                </Link>
+                <Link href="https://www.linkedin.com/in/niyonshuti-kenny-5842632b8" className="hover:text-[#64ffda] transition-colors">
+                  <Linkedin size={20} />
+                </Link>
+                <Link href="https://app.bag.work/niyonshuti_kenny558/" className="hover:text-[#64ffda] transition-colors">
+                  <Bold size={20} />
+                </Link>
+                <Link href="https://twitter.com/isthat.kenny" className="hover:text-[#64ffda] transition-colors">
+                  <Instagram size={20} />
+                </Link>
+              </div>
+            </div>
             
           </motion.div>
         </footer>

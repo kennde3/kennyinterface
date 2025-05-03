@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail, Home, User, Briefcase, FolderGit2, Youtube, Bold } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Home, User, Briefcase, FolderGit2, Youtube, Bold, Instagram } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useActiveSection } from '../_hooks/useActiveSection';
 
@@ -55,20 +55,20 @@ export default function Herosection() {
             </nav>
             <div>
               <div className="flex space-x-6 items-center justify-center text-[#8892b0]">
-                <Link href="mailto:your@email.com" className="hover:text-[#64ffda] transition-colors">
+                <Link href="email:niyonshutikenny@yahoo.com" className="hover:text-[#64ffda] transition-colors">
                   <Mail size={20} />
                 </Link>
-                <Link href="https://github.com" className="hover:text-[#64ffda] transition-colors">
+                <Link href="https://github.com/kennde3" className="hover:text-[#64ffda] transition-colors">
                   <Github size={20} />
                 </Link>
-                <Link href="https://linkedin.com" className="hover:text-[#64ffda] transition-colors">
+                <Link href="https://www.linkedin.com/in/niyonshuti-kenny-5842632b8" className="hover:text-[#64ffda] transition-colors">
                   <Linkedin size={20} />
                 </Link>
                 <Link href="https://app.bag.work/niyonshuti_kenny558/" className="hover:text-[#64ffda] transition-colors">
                   <Bold size={20} />
                 </Link>
-                <Link href="https://twitter.com" className="hover:text-[#64ffda] transition-colors">
-                  <Youtube size={20} />
+                <Link href="https://twitter.com/isthat.kenny" className="hover:text-[#64ffda] transition-colors">
+                  <Instagram size={20} />
                 </Link>
               </div>
             </div>
